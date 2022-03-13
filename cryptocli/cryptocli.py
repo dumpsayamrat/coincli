@@ -4,7 +4,7 @@
 import argparse
 from texttable import Texttable
 
-from fetch_crypto import fetch_crypto
+from . import fetch_crypto
 
 parser = argparse.ArgumentParser(description='Crypto in terminal ')
 
