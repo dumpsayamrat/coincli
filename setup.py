@@ -7,24 +7,24 @@ this_directory = Path(__file__).parent
 long_description = (this_directory / "README.md").read_text()
 
 main_ns = {}
-ver_path = convert_path('coincli/__init__.py')
+ver_path = convert_path('coinpricli/__init__.py')
 with open(ver_path) as ver_file:
     exec(ver_file.read(), main_ns)
 
 setup(
-    name='coincli',
+    name='coinpricli',
     version=main_ns['__version__'],
-    packages=find_packages(include=['coincli', 'coincli.*']),
+    packages=find_packages(include=['coinpricli', 'coinpricli.*']),
     install_requires=[
         'beautifulsoup4>=4.10.0',
         'requests',
         'texttable>=1.6.4',
     ],
     entry_points={
-        'console_scripts': ['coincli=coincli.coincli:main']
+        'console_scripts': ['coinpricli=coinpricli.coinpricli:main']
     },
     setup_requires=['flake8'],
-    url='https://github.com/dumpsayamrat/coincli',
+    url='https://github.com/dumpsayamrat/coinpricli',
     keywords="cryptocurrency cli coin coicli",
     license='BSD',
     classifiers=[

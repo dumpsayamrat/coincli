@@ -18,7 +18,7 @@ def parse_args():
     parser.add_argument('-l', '--limit', type=limit_validator, default=5,
                         metavar='N', help='number of coins to display, max is 10')
     parser.add_argument(
-        '-v', '--version', action='version', version=f"coincli: {__version__}")
+        '-v', '--version', action='version', version=f"coinpricli: {__version__}")
     parser.add_argument('-s', '--simple', action='store_true',
                         help='show simple table instead')
 
