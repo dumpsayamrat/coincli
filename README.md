@@ -2,12 +2,12 @@
 
 coincli is a package where you can easily monitor cryptocurrencies. It's using web scapping to get data from [coinmarketcap.com's web page](https://coinmarketcap.com).
 
-![coincli show case](https://lh3.googleusercontent.com/WLM8UCf0tFBxcUmZzspb2D5TOo_klOUUANIWynprgHMkrX1zfg70uinKw9C88PYVIEZFWQgy4qHAAL0vGuzD44rWo7LZDErGCzvKpSyPpCatpA1Y2O1b_DCXHiwgF8gI7nXGrGUeJQ=w2400)
+![coincli show case](https://lh3.googleusercontent.com/miOqQq55bbCgZvzE6COSUtGfRM2S0diohZLBM6zXYEm5Hhljz9AjW7fVt0t6xDar0a2WiZUnqZgGOePegGpS-DVP1zdUyrXVrEy-LxzB46XXn1w86fAqgv7Rb_8Z9ticuR72A8wHUg=w2400)
 
 ## Installation
 This project has been implemented using Python3, it's reqiured to install Python 3.8 or higher.
 
-(Download Python here)[https://www.python.org/downloads/]
+[Download Python here](https://www.python.org/downloads/)
 
 ```shell
 pip install coincli
