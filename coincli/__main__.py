@@ -23,19 +23,30 @@ def generate_table(headers, data):
   t.add_rows([headersRow] + dataRow)
   return t
 
+full_headers = [
+  {'title': '#'},
+  {'title': 'Name', 'key': 'name'},
+  {'title': 'Price', 'key': 'price'},
+  {'title': '24h %', 'key': 'today_change'},
+  {'title': '7d %', 'key': 'week_change'},
+  {'title': 'Market Cap', 'key': 'market_cap'},
+  {'title': 'Volume', 'key': 'volume'}
+]
+
+simple_headers = [
+  {'title': '#'},
+  {'title': 'Name', 'key': 'name'},
+  {'title': 'Price', 'key': 'price'},
+]
+
 def main():
   args = parse_args()
-
+  print(args)
   data = fetch_crypto_data(vars(args))
-  headers = [
-    {'title': '#'},
-    {'title': 'Name', 'key': 'name'},
-    {'title': 'Price', 'key': 'price'},
-    {'title': '24h %', 'key': 'today_change'},
-    {'title': '7d %', 'key': 'week_change'},
-    {'title': 'Market Cap', 'key': 'market_cap'},
-    {'title': 'Volume', 'key': 'volume'}
-  ]
+  headers = full_headers
+  if (args.simple):
+    headers = simple_headers
+
   print(generate_table(headers, data).draw())
 
 if __name__ == '__main__':

@@ -1,4 +1,5 @@
 import argparse
+from xmlrpc.client import Boolean
 from . import __version__
 
 def limit_validator(arg):
@@ -17,5 +18,7 @@ def parse_args():
     metavar='N', help='number of coins to display, max is 10')
   parser.add_argument(
     '-v', '--version', action='version', version=f"coincli: {__version__}")
+  parser.add_argument('-s', '--simple', action='store_true',
+    help='show simple table instead')
 
   return parser.parse_args()
