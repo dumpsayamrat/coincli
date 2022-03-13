@@ -1,4 +1,4 @@
-# coinpricli [![PyPI](https://img.shields.io/pypi/v/coinpricli?color=brightgreen)
+# coinpricli ![PyPI](https://img.shields.io/pypi/v/coinpricli?color=brightgreen)
 
 coinpricli is a package where you can easily monitor cryptocurrencies. It's using web scapping to get data from [coinmarketcap.com's web page](https://coinmarketcap.com).
 
