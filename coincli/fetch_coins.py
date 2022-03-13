@@ -4,7 +4,7 @@ import requests
 url = "https://coinmarketcap.com"
 default_parameter = {'limit': 5}
 
-def fetch_crypto(options = default_parameter):
+def fetch_crypto_data(options = default_parameter):
   data = []
   res = requests.get(url)
   res.encoding = "utf-8"
