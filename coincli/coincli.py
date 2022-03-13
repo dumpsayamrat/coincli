@@ -4,7 +4,7 @@
 import argparse
 from texttable import Texttable
 
-from . import fetch_crypto
+from . import fetch_coins
 
 parser = argparse.ArgumentParser(description='Crypto in terminal ')
 
@@ -22,7 +22,7 @@ parser.add_argument('-l', '--limit', type=limit_validator, default=5,
 
 args = parser.parse_args()
 print(args.limit)
-data = fetch_crypto(vars(args))
+data = fetch_coins(vars(args))
 
 
 def generate_table(headers, data):
